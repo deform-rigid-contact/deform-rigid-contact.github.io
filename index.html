@@ -29,18 +29,6 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-    <div class="navbar-menu">
-    </div>
-</nav>
-
 
 <section class="hero">
     <div class="hero-body">
@@ -63,13 +51,17 @@
                     </div>
 
                     <div class="is-size-5 publication-authors">
-                        <span class="author-block"><sup>1</sup>University of Michigan,</span>
+                        <span class="author-block"><sup>1</sup>University of Michigan</span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <b>IEEE Robotics and Automation Letters 2025</b>
                     </div>
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
               <span class="link-block">
-                <a href=""
+                <a href="https://arxiv.org/abs/2505.10884"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -81,6 +73,22 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+                <source src="./static/videos/intro.mp4"
+                        type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+                We propose a joint learning and first-principles approach to predict <i>deformable-rigid</i>
+                <b>motion</b> and <b>intrinsic and extrinsic forces</b> from sensing.
+            </h2>
         </div>
     </div>
 </section>
@@ -132,6 +140,154 @@
             </div>
         </div>
         <!--/ Paper video. -->
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop" style="margin-bottom: 20px;">
+        <h2 class="title is-3">Simulated Results</h2>
+        <div class="container">
+            <div id="results-carousel" class="carousel results-carousel" style="margin-bottom: 10px;">
+                <div class="item item-block-pivot-1">
+                    <video poster="" id="block-pivot-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_block_pivot_1_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-triangle-pivot-1">
+                    <video poster="" id="triangle-pivot-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_triangle_pivot_1_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-block-pivot-2">
+                    <video poster="" id="block-pivot-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_block_pivot_2_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-pentagon-push-1">
+                    <video poster="" id="pentagon-push-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_pentagon_push_1_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-block-push-1">
+                    <video poster="" id="block-push-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_block_push_1_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-pentagon-pivot-2">
+                    <video poster="" id="pentagon-pivot-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_pentagon_pivot_2_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-pentagon-push-2">
+                    <video poster="" id="pentagon-push-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_pentagon_push_2_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-triangle-pivot-2">
+                    <video poster="" id="triangle-pivot-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_triangle_pivot_2_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-block-push-2">
+                    <video poster="" id="block-push-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_block_push_2_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-triangle-push-1">
+                    <video poster="" id="triangle-push-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_triangle_push_1_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-pentagon-pivot-1">
+                    <video poster="" id="pentagon-pivot-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_pentagon_pivot_1_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-triangle-push-2">
+                    <video poster="" id="triangle-push-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/sim/cropped_triangle_push_2_fix.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="content">
+                <p>
+                    We show one-step predictions of <span style="color: rgb(173, 216, 230);">object motion</span>, <span
+                        style="color: rgb(4, 127, 16);">deformable tool contacts</span>, and <span
+                        style="color: rgb(254, 30, 31);">extrinsic contacts</span> on test simulation interactions for
+                    our proposed method. Ground truth is shown as semi-transparent, predictions as opaque. Friction
+                    cones are shown in grey.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container is-max-desktop" style="margin-bottom: 20px;">
+        <h2 class="title is-3">Real Results</h2>
+        <div class="container">
+            <div id="results-carousel-real" class="carousel results-carousel" style="margin-bottom: 10px;">
+                <div class="item real-block-push-1">
+                    <video poster="" id="real-block-push-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/real/small_pivot.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item real-block-pivot-1">
+                    <video poster="" id="real-block-pivot-1" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/real/small_push.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item real-block-push-2">
+                    <video poster="" id="real-block-push-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/real/tall_pivot.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+                <div class="item real-block-pivot-2">
+                    <video poster="" id="real-block-pivot-2" autoplay controls muted loop playsinline height="100%">
+                        <source src="./static/videos/real/tall_push.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="content">
+                <p>
+                    We demonstrate qualitative transfer to real world interactions, performed using a Franka Emika
+                    Panda. Point clouds are segmented using <a href="https://segment-anything.com/">SAM</a> and blocks
+                    are tracked using the Apriltags. In the paper, we evaluate block tracking and use a force-sensor in
+                    the environment to evaluate force predictions.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container is-max-desktop">
+        <h2 class="title is-3">Application: Force Tracking</h2>
+        <div class="container">
+            <div class="content">
+                <p>
+                    We apply our model to a <i>force tracking</i> task, where we pivot an object while trying to track a
+                    desired extrinsic contact force. We use our model to plan the arc length of the pivot, allowing the
+                    model to press in or out as it pivots.
+                </p>
+            </div>
+            <video id="pivot-video" autoplay controls muted loop playsinline height="100%"
+                   style="transform: scale(0.8);">
+                <source src="./static/videos/pivot_task.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
     </div>
 </section>
 
